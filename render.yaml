@@ -2,7 +2,7 @@ services:
   - type: web
     name: 168money-socket-backend
     env: node
-    plan: hobby
+    plan: free
     buildCommand: npm install
     startCommand: npm start
     envVars:
