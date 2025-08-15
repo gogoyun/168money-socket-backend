@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: 168money-socket-backend
+    env: node
+    plan: hobby
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SOCKET_PORT
+        value: 10000
+      - key: SOCKET_HOST
+        value: 0.0.0.0
+    healthCheckPath: /health
+    autoDeploy: true
+    branch: main

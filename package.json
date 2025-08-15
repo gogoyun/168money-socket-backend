@@ -1,0 +1,25 @@
+{
+  "name": "168money-socket-backend",
+  "version": "1.0.0",
+  "description": "168money Customer Service - Socket Backend",
+  "type": "module",
+  "main": "socket-server.js",
+  "scripts": {
+    "start": "node socket-server.js",
+    "dev": "NODE_ENV=development nodemon socket-server.js",
+    "staging": "NODE_ENV=staging nodemon socket-server.js",
+    "production": "NODE_ENV=production nodemon socket-server.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "socket.io": "^4.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
